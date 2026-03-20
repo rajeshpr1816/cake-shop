@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cake Shop Gallery</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff8f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Header */
+.pro-header {
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ff6f61;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navbar */
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #ff6f61;
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ff6f61;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+}
+
+.logo-img {
+  height: 60px;
+  width: auto;
+}
+
+    .gallery-section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .gallery-section h2 {
+      text-align: center;
+      font-size: 2.8em;
+      color: #d35400;
+      margin-bottom: 40px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.03);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .caption {
+      position: absolute;
+      bottom: 0;
+      background: rgba(0,0,0,0.6);
+      color: #fff;
+      width: 100%;
+      padding: 10px;
+      font-size: 1em;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+    <header class="pro-header">
+  <div class="container">
+    <div class="logo">
+        <img class="logo-img" src="Images/logo.png" alt="Cake Bliss Logo">Cake Bliss
+    </div>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="cake_shop.html">Home</a></li>
+        <li><a href="cs_about.html">About</a></li>
+        <li><a href="cs_menu.html">Menu</a></li>
+        <li><a href="cs_gallery.html">Gallery</a></li>
+        <li><a href="cs_contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <section class="gallery-section">
+    <h2>Our Gallery</h2>
+    <div class="gallery-grid">
+
+      <!-- Cake Images -->
+      <div class="gallery-item">
+        <img src="https://bluebowlrecipes.com/wp-content/uploads/2023/08/chocolate-truffle-cake-8844.jpg" alt="Chocolate Truffle Cake">
+        <div class="caption">🍫 Chocolate Truffle Cake</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://i0.wp.com/www.alattefood.com/wp-content/uploads/2016/04/Berry-Vanilla-Cake-25-Sharp-Long.jpg?w=1000&ssl=1" alt="Vanilla Cream Cake">
+        <div class="caption">🍦 Vanilla Cream Cake</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://thescranline.com/wp-content/uploads/2024/06/RED-VELVET-CAKE-23-WEB-09-edited.jpg" alt="Red Velvet Cake">
+        <div class="caption">❤️ Red Velvet Cake</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1627308595229-7830a5c91f9f" alt="Fruit Delight Cake">
+        <div class="caption">🍓 Fruit Delight Cake</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://butterflybakeryne.com/cdn/shop/files/5_5ef6ad5e-093d-46b2-ae82-e57e503b3cb0.png?v=1719449135&width=990" alt="Butterfly Bakery">
+        <div class="caption">🦋 Elegant Emerald Designer Cake</div>
+      </div>
+
+      <!-- Interior Images -->
+      <div class="gallery-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgqXz8vwjXvsri1OCYB8eec1QWUeMOS3MTyA&s" alt="Glass Display Counter">
+        <div class="caption">🍰 Signature Cakes in Elegant Glass Display</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://files.idyllic.app/files/static/2324005?width=256&optimizer=image" alt="Cozy Seating Area">
+        <div class="caption">🪑 Cozy Seating with Pastel Tones</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://i.pinimg.com/564x/34/12/3d/34123de9ba30b71a9546f8bf016014c6.jpg" alt="Vintage Interior">
+        <div class="caption">Romantic and whimsical interior with vintage charm</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://milestoneeventsgroup.com/wp-content/uploads/2023/09/image-20.jpeg" alt="Decorating Station">
+        <div class="caption">🎨 Creative Cake Decorating Station</div>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>

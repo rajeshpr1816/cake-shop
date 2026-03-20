@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us - Sweet Crumbs Cake Shop</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff8f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Header */
+.pro-header {
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ff6f61;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navbar */
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #ff6f61;
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ff6f61;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+}
+
+.logo-img {
+  height: 60px;
+  width: auto;
+} 
+
+
+    .about-section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+
+    .about-section h1 {
+      text-align: center;
+      font-size: 2.8em;
+      color: #d35400;
+      margin-bottom: 20px;
+    }
+
+    .about-text {
+      font-size: 1.2em;
+      color: #555;
+      line-height: 1.6;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .interior-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .interior-item {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .interior-item:hover {
+      transform: scale(1.03);
+    }
+
+    .interior-item img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .interior-caption {
+      padding: 15px;
+      font-size: 1em;
+      color: #444;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="pro-header">
+  <div class="container">
+    <div class="logo">
+        <img class="logo-img" src="Images/logo.png" alt="Cake Bliss Logo">Cake Bliss
+    </div>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="cake_shop.html">Home</a></li>
+        <li><a href="cs_about.html">About</a></li>
+        <li><a href="cs_menu.html">Menu</a></li>
+        <li><a href="cs_gallery.html">Gallery</a></li>
+        <li><a href="cs_contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <section class="about-section">
+    <h1>About Us</h1>
+    <p class="about-text">
+      Welcome to <strong>Cake Bliss</strong>, where every bite is a celebration. Founded with a passion for baking and a love for joyful moments, we craft cakes that blend flavor, artistry, and heart. Our shop is designed to be as delightful as our desserts — warm, inviting, and full of charm.
+    </p>
+
+    <div class="interior-gallery">
+
+      <div class="interior-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgqXz8vwjXvsri1OCYB8eec1QWUeMOS3MTyA&s" alt="Front Display Counter">
+        <div class="interior-caption">🍰 Our front counter showcases daily specials and signature cakes with elegant glass displays.</div>
+      </div>
+
+      <div class="interior-item">
+        <img src="https://files.idyllic.app/files/static/2324005?width=256&optimizer=image" alt="Seating Area">
+        <div class="interior-caption">🪑 Cozy seating area with pastel tones and natural lighting — perfect for enjoying a slice with friends.</div>
+      </div>
+
+      <div class="interior-item">
+        <img src="https://milestoneeventsgroup.com/wp-content/uploads/2023/09/image-20.jpeg" alt="Decorated Cake Station">
+        <div class="interior-caption">🎨 Our decorating station is where creativity comes to life — from birthday themes to wedding elegance.</div>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>

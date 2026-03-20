@@ -1,0 +1,149 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff8f0;
+  color: #333;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Header */
+.pro-header {
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ff6f61;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navbar */
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #ff6f61;
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ff6f61;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+}
+
+.logo-img {
+  height: 60px;
+  width: auto;
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem;
+  background: #ffe0d6;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #ff6f61;
+  color: white;
+}
+
+h1, h2 {
+  font-family: 'Brush Script MT', cursive;
+}
+
+.featured-cakes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.cake {
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: #eee 0px 4px 6px -1px, hotpink 0px 2px 4px -1px;
+}
+
+.cake img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.cake:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s;
+  box-shadow: #ff6f61 0px 6px 8px -1px, hotpink 0px 4px 6px -1px;
+}
+

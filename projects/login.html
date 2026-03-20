@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cake Shop Login</title>
+  <style>
+    body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background-color: rgba(255, 248, 240, 0.95);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  text-align: center;
+  max-width: 350px;
+  width: 100%;
+}
+
+.login-container h1 {
+  margin-bottom: 24px;
+  color: #d2691e;
+}
+
+.login-form label {
+  display: block;
+  margin: 12px 0 6px;
+  text-align: left;
+  color: #555;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.login-form button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: #d2691e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #b35900;
+}
+.login-form input:focus {
+  border-color: #d2691e;
+}
+
+.register-link {
+      margin-top: 20px;
+      display: block;
+      color: #d2691e;
+      text-decoration: none;
+    }
+
+.register-link:hover {
+      text-decoration: underline;
+    }
+
+</style>
+</head>
+<body>
+  <div class="login-container">
+    <h1>Welcome to Cake bLISS 🍰</h1>
+    <form class="login-form">
+      <label for="username">Username</label>
+      <input type="text" id="username" placeholder="Enter your username" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter your password" required>
+
+       <button type="submit" onclick="return loginUser()">Login</button>
+
+       <a href="Registration.html" class="register-link">Do not have an account? Register Here</a>
+      
+       <script src="login.js"></script>
+ 
+       
+    </form>
+  </div>
+</body>
+</html>
