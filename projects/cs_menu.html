@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cake Shop Menu</title>
+  <link rel="stylesheet" href="cake_shop.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff8f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Header */
+.pro-header {
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ff6f61;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.logo-img {
+  height: 60px;
+  width: auto;
+} 
+
+
+    .menu-section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #d35400;
+      font-size: 2.8em;
+      margin-bottom: 20px;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .menu-item {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .menu-item:hover {
+      transform: scale(1.03);
+    }
+
+    .menu-item img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+    }
+
+    .menu-content {
+      padding: 15px;
+    }
+
+    .menu-content h3 {
+      margin: 0;
+      color: #333;
+      font-size: 1.4em;
+    }
+
+    .menu-content p {
+      margin: 10px 0;
+      color: #666;
+      font-size: 1em;
+    }
+
+    .price {
+      color: #d35400;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="pro-header">
+  <div class="container">
+    <div class="logo">
+        <img class="logo-img" src="Images/logo.png" alt="Cake Bliss Logo">Cake Bliss
+    </div>
+    <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+    <nav class="navbar">
+      <ul class="nav-links" aria-hidden="true">
+        <li><a href="cake_shop.html">Home</a></li>
+        <li><a href="cs_about.html">About</a></li>
+        <li><a href="cs_menu.html">Menu</a></li>
+        <li><a href="cs_gallery.html">Gallery</a></li>
+        <li><a href="cs_contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <section class="menu-section">
+    <h2>Our Cake Menu</h2>
+    <div class="menu-grid">
+
+      <div class="menu-item">
+        <img src="https://bluebowlrecipes.com/wp-content/uploads/2023/08/chocolate-truffle-cake-8844.jpg" alt="Chocolate Truffle Cake">
+        <div class="menu-content">
+          <h3>Chocolate Truffle Cake</h3>
+          <p>Rich and moist chocolate layers with silky ganache.</p>
+          <p class="price">₹499</p>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="https://i0.wp.com/www.alattefood.com/wp-content/uploads/2016/04/Berry-Vanilla-Cake-25-Sharp-Long.jpg?w=1000&ssl=1" alt="Vanilla Cream Cake">
+        <div class="menu-content">
+          <h3>Vanilla Cream Cake</h3>
+          <p>Light vanilla sponge with whipped cream and berries.</p>
+          <p class="price">₹449</p>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="https://thescranline.com/wp-content/uploads/2024/06/RED-VELVET-CAKE-23-WEB-09-edited.jpg" alt="Red Velvet Cake">
+        <div class="menu-content">
+          <h3>Red Velvet Cake</h3>
+          <p>Classic red velvet with cream cheese frosting.</p>
+          <p class="price">₹549</p>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1627308595229-7830a5c91f9f" alt="Fruit Delight Cake">
+        <div class="menu-content">
+          <h3>Fruit Delight Cake</h3>
+          <p>Fresh seasonal fruits layered over vanilla sponge.</p>
+          <p class="price">₹499</p>
+        </div>
+      </div>
+
+       <div class="menu-item">
+        <img src="https://sugarandsparrow.s3.us-west-2.amazonaws.com/flour/wp-content/uploads/2023/05/31171738/double-funfett-birthday-cake-6.jpeg" alt="Double Funfetti Birthday Cake">
+        <div class="menu-content">
+          <h3>Birthday Cake</h3>
+          <p>Funfetti cake with buttercream frosting.</p>
+          <p class="price">₹499</p>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="https://butterflybakeryne.com/cdn/shop/files/garden-party-cake_butterfly-bakery-1.png?v=1719448117&width=990" alt="Garden Party Cake">
+        <div class="menu-content">
+          <h3>Designer Cake</h3>
+          <p>Custom-designed cake for all occasions.</p>
+          <p class="price">₹499</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
+  const themeToggle = document.getElementById("theme-toggle");
+
+  if (themeToggle) {
+    themeToggle.addEventListener("click", () => {
+      document.body.classList.toggle("dark-theme");
+    });
+  }
+
+  if (toggle && navLinks) {
+    toggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+      const expanded = navLinks.classList.contains("active");
+      toggle.setAttribute("aria-expanded", expanded.toString());
+      navLinks.setAttribute("aria-hidden", (!expanded).toString());
+    });
+  }
+});
+  </script>
+
+</body>
+</html>
